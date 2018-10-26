@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.656" height="69.68" viewBox="0 0 69.656 69.68">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3d1d50;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="504.188" y="3003.16" width="66.656" height="66.68" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#0c2645"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-502.688 -3001.66)" style="fill: none; filter: url(#filter)">
+    <path id="Прямоугольник_скругл._углы_1_копия_3" data-name="Прямоугольник, скругл. углы 1 копия 3" class="cls-1" d="M544.571,3006.09l23.335,23.34a10,10,0,0,1,0,14.14l-23.335,23.33a9.991,9.991,0,0,1-14.142,0l-23.335-23.33a10,10,0,0,1,0-14.14l23.335-23.34A10.009,10.009,0,0,1,544.571,3006.09Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-502.688 -3001.66)" xlink:href="#Прямоугольник_скругл._углы_1_копия_3" style="stroke: #3d1d50; filter: none; fill: none"/>
+</svg>

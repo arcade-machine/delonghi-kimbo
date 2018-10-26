@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Futura Medium";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FuturaNewMedium.woff2") format("woff2"),  url("../fonts/FuturaNewMedium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),  url("../fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+body {
+  font-family: "Futura Medium", Arial, sans-serif;
+  font-size: 40px;
+}
