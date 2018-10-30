@@ -62,7 +62,7 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("watch", ["browserSync", "sass", "pug"], function () {
-    gulp.watch("source/less/**/*.scss", ["scss"]);
+    gulp.watch("source/scss/**/*.scss", ["sass"]);
     gulp.watch("source/pug/*.pug", ["pug"]);
     gulp.watch("source/*.html", browserSync.reload);
     gulp.watch("source/js/*.js", browserSync.reload);

@@ -1,0 +1,25 @@
+.products {
+  max-width: 1230px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+.products__heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-family: "Futura Medium", Arial, sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  color: $blue;
+}
+
+.products__list {
+  @include clear_list;
+
+  min-height: 600px;
+  background-color: #f7f2ed;
+}

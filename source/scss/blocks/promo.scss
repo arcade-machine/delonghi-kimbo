@@ -1,0 +1,73 @@
+.promo {
+  max-width: 1230px;
+  padding: 80px 30px;
+  margin: 0 auto;
+}
+
+.promo__wrapper {
+  max-width: 1070px;
+  margin-left: auto;
+
+  display: flex;
+}
+
+.promo__image-box {
+  width: 510px;
+  height: 425px;
+
+  position: relative;
+}
+
+.promo__coffee-bag {
+  max-width: 100%;
+  height: auto;
+
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: -1;
+}
+
+.promo__coffee-pack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.promo__text-box {
+  max-width: 525px;
+  margin-left: auto;
+  padding-top: 25px;
+}
+
+.promo__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: "Futura Medium", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: $blue;
+}
+
+.promo__bean {
+  margin: 0 auto 25px auto;
+
+  display: block;
+}
+
+.promo__text {
+  max-width: 360px;
+  margin: 0 auto;
+
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  line-height: 1.2;
+  color: $blue;
+  text-align: center;
+  font-style: italic;
+}
+
+.promo__grey {
+  color: $grey;
+}

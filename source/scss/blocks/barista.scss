@@ -1,0 +1,107 @@
+.barista {
+  max-width: 1230px;
+  padding: 50px 30px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+.barista__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: "Futura Medium", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  color: $blue;
+}
+
+.barista__list {
+  @include clear_list;
+
+  display: flex;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-bottom: 80px;
+  }
+
+  &--first-row {
+    .barista__item:first-child::before {
+      content: "1";
+    }
+
+    .barista__item:nth-child(2)::before {
+      content: "3";
+    }
+  }
+
+  &--second-row {
+    .barista__item:first-child::before {
+      content: "2";
+    }
+
+    .barista__item:nth-child(2)::before {
+      content: "4";
+    }
+  }
+}
+
+.barista__item {
+  width: 50%;
+  max-width: 325px;
+  padding-top: 85px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+
+    background-image: url("../img/round.svg");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: $blue;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.barista__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  font-family: "Futura Medium", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: $grey;
+}
+
+.barista__content {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-style: italic;
+  color: $grey;
+  text-align: center;
+}
+
+.barista__list_wrapper {
+  background-image: url("../img/min-img/product-image.png");
+  background-position: 50% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
