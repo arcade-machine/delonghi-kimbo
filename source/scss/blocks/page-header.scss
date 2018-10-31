@@ -2,6 +2,7 @@
   height: 100vh;
   padding-bottom: 175px;
 
+  background-color: $brown;
   background-image: url("../img/min-img/header.png");
   background-size: cover;
   background-position: center;
@@ -11,6 +12,10 @@
   flex-direction: column;
 
   box-sizing: border-box;
+
+  @media (max-height: 800px) {
+    padding-bottom: 100px;
+  }
 }
 
 .page-header__wrapper {
@@ -26,6 +31,10 @@
 .page-header__text_box {
   max-width: 630px;
   margin-left: auto;
+
+  @media (max-width: 700px) {
+    max-width: unset;
+  }
 }
 
 .page-header__heading {
@@ -37,6 +46,14 @@
   font-weight: 400;
   text-align: right;
   color: $white;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 32px;
+  }
 }
 
 .page-header__links-list {
@@ -46,6 +63,20 @@
 
   display: flex;
   justify-content: flex-end;
+
+  @media (max-height: 800px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 25px;
+
+    justify-content: center;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .page-header__links-item {
@@ -54,6 +85,14 @@
 
   &:first-child {
     margin-right: 10px;
+  }
+
+  @media(max-width: 500px) {
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -83,22 +122,48 @@
   &--brown {
     background-color: $brown;
 
+    @media (max-width: 700px) {
+      background-color: $blue;
+    }
+
     &:hover {
       color: $brown;
+
+      @media (max-width: 700px) {
+        background-color: #58B0E2;
+        color: $white;
+      }
     }
   }
 
   &--brown-light {
     background-color: $brown_light;
 
+    @media (max-width: 700px) {
+      background-color: $blue;
+    }
+
     &:hover {
       color: $brown_light;
+
+      @media (max-width: 700px) {
+        background-color: #58B0E2;
+        color: $white;
+      }
     }
+  }
+
+  @media (max-width: 500px) {
+    min-height: 37px;
   }
 }
 
 .page-header__text_box {
   text-align: right;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 }
 
 .page-header__text {
@@ -107,6 +172,10 @@
   font-family: "Futura Medium", Arial, sans-serif;
   font-size: 45px;
   color: $white;
+
+  @media (max-width: 500px) {
+    font-size: 32px;
+  }
 }
 
 .page-header__small-text {
@@ -115,6 +184,10 @@
   font-family: "Futura Medium", Arial, sans-serif;
   font-size: 28px;
   color: $white;
+
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
 }
 
 .page-header__medium-text {
@@ -123,6 +196,10 @@
   font-family: "Futura Medium", Arial, sans-serif;
   font-size: 38px;
   color: $white;
+
+  @media (max-width: 500px) {
+    font-size: 32px;
+  }
 }
 
 .page-header__uppercase {

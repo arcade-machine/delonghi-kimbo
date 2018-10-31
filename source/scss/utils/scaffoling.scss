@@ -35,6 +35,14 @@ $brown: #af8461;
 $brown_light: #e6bf9a;
 $blue: #0c2645;
 
+body {
+  background-color: #f9f9f9;
+}
+
+.visually-hidden {
+  display: none;
+}
+
 @mixin clear_list {
   padding: 0;
   margin: 0;

@@ -1,0 +1,72 @@
+doctype html
+
+html(lang = "RU")
+
+    head
+
+        meta(charset = "utf-8")
+        meta(name = "viewport", content = "width=device-width,initial-scale=1")
+        meta(name="description", content="Title")
+
+        title Title
+
+        link(type = "text/css", rel = "stylesheet", href = "css/styles.min.css")
+        link(type = "text/css", rel = "stylesheet", href = "css/normalize.css")
+
+    body
+        header.header
+
+        main.register-form
+            .register-form__wrapper
+                .register-form__form-box
+                    h2.register-form__heading
+                        | Регистрация покупки
+                    .register-form__form
+                        form(action="#")
+                            .register-form__inputs-wrapper
+                                .register-form__input
+                                    input(type="text" placeholder="Фамилия" id="userSurname")
+                                .register-form__input
+                                    input(type="text" placeholder="Имя" id="userName")
+                                .register-form__input
+                                    input(type="text" placeholder="Отчество" id="userPatronymic")
+                                select.register-form__select
+                                    option.register-form__option.register-form__option--placeholder(disabled selected hidden)
+                                        | Модель купленной кофемашины
+                                    option
+                                        | PrimaDonna Elite Experience ECAM 650.85.MS
+                                    option
+                                        | PrimaDonna Elite ECAM 650.75.MS
+                                .register-form__input
+                                    input(type="text" placeholder="Серийный номер" id="serialNumber")
+                                .register-form__input
+                                    input(type="phone" placeholder="Контактный номер телефона" id="userPhone")
+                                .register-form__input
+                                    input(type="text" placeholder="Адрес доставки" id="userAddress")
+                                .register-form__input
+                                    input(type="email" placeholder="Адрес электронной почты" id="userEmail")
+                                a.register-form__attach-file(href="javascript:void(0);")
+                                    | Прикрепить фото чека
+                            .register-form__present_box
+                                p.register-form__subheading
+                                    | Выбрать подарок
+                                .register-form__checkbox-wrapper
+                                    input.visually-hidden(type="radio" name="present" id="presentArabika" value="presentArabika")
+                                    input.visually-hidden(type="radio" name="present" id="presentDeluxe" value="presentDeluxe")
+                                    .register-form__checkbox.register-form__checkbox--kimbo
+                                        label.register-form__present(for="presentArabika")
+                                            span.register-form__present-text
+                                                | 10кг Кимбо Арабика
+                                            img.register-form__present-img(src="img/min-img/arabika.png")
+                                    .register-form__checkbox.register-form__checkbox--deluxe
+                                        label.register-form__present(for="presentDeluxe")
+                                            span.register-form__present-text
+                                                | Фирменный набор
+                                                | DeLuxe Pack
+                                            img.register-form__present-img(src="img/min-img/deluxe.png")
+                            button.register-form__submit(type="submit")
+                                | Получить подарок
+                .register-form__image-box
+                    img.register-form__image(src="img/min-img/form-image.jpg")
+
+        footer.footer

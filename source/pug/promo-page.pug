@@ -34,7 +34,7 @@ html(lang = "RU")
                         p.page-header__medium-text
                             | 10кг #[span.page-header__uppercase кофе в подарок!]
         main.page-content
-            .page-content__promo.promo
+            section.page-content__promo.promo
                 .promo__wrapper
                     .promo__image-box
                         img.promo__coffee-bag(src="img/min-img/coffee-bag.png" width="730" height="607")
@@ -47,13 +47,13 @@ html(lang = "RU")
                             | #[span.promo__grey 10 кг отборной 100% Арабики для приготовления]
                             br
                             | любимых напитков на любой вкус каждый день
-            .page-content__coffee-machine.coffee-machine
-            .page-content__barista.barista
+            section.page-content__coffee-machine.coffee-machine
+            section.page-content__barista.barista
                 .barista__wrapper
                     h2.barista__heading
                         | Персональный бариста у вас дома
                     .barista__list_wrapper
-                        ul.barista__list.barista__list--first-row
+                        ul.barista__list.barista__list--first-column
                             li.barista__item
                                 h3.barista__title
                                     | Удобное
@@ -63,19 +63,19 @@ html(lang = "RU")
                                     | Интуитивный понятный интерфейс позволяет легко и удобно пользоваться всем функционалом кофемашины. Дисплей предоставляет доступ к любимым напиткам, позволяет настраивать и  сохранять в памяти рецепты в соответствии с предпочтениями.
                             li.barista__item
                                 h3.barista__title
-                                    | Персонализация
-                                    br
-                                    | напитков
-                                p.barista__content
-                                    | Все напитки, от эспрессо до латте маккиато, легко настраиваются согласно Вашим персональным предпочтениям при помощи простого в использовании сенсорного дисплея. С кофемашиной PrimaDonna Elite Вы можете наслаждаться своими любимыми напитками, приготовленными именно так, как Вы любите.
-                        ul.barista__list.barista__list--second-row
-                            li.barista__item
-                                h3.barista__title
                                     | Система вспенивания
                                     br
                                     | молока LatteCrema System
                                 p.barista__content
                                     | Благодаря современной технологии с отдельной гидравлической системой, точной электроникой и специальным контейнером для молока, система LatteCrema System от компании De’Longhi смешивает пар, воздух и молоко в нужной пропорции, чтобы обеспечивать получение идеальной молочной пены для Ваших любимых кофейных напитков с молоком.
+                        ul.barista__list.barista__list--second-column
+                            li.barista__item
+                                h3.barista__title
+                                    | Персонализация
+                                    br
+                                    | напитков
+                                p.barista__content
+                                    | Все напитки, от эспрессо до латте маккиато, легко настраиваются согласно Вашим персональным предпочтениям при помощи простого в использовании сенсорного дисплея. С кофемашиной PrimaDonna Elite Вы можете наслаждаться своими любимыми напитками, приготовленными именно так, как Вы любите.
                             li.barista__item
                                 h3.barista__title
                                     | Современный
@@ -83,12 +83,13 @@ html(lang = "RU")
                                     | динамичный дизайн
                                 p.barista__content
                                     | Каждый элемент кофемашин выполнен с большим вниманием к мельчайшим деталям. Благодаря универсальному дизайну кофемашина De'Longhi украсит интерьер любой кухни. Каждая модель - новый стандарт элегантности.
-            .page-content__coffee-love.coffee-love
+            section.page-content__coffee-love.coffee-love
                 .coffee-love__card
                     .coffee-love__wrapper
                         .coffee-love__text-box
                             h2.coffee-love__heading
-                                | Кофе - это любовь на всю жизнь.
+                                | Кофе - это любовь
+                                | на всю жизнь.
                             h3.coffee-love__sub-heading
                                 | Побалуйте себя чашечкой превосходной арабики
                             p.coffee-love__text
@@ -100,7 +101,7 @@ html(lang = "RU")
                             p.coffee-love__text
                                 | В то время кофейное дерево еще не называли арабикой, это название ботаники дали растению гораздо позже, и не совсем верно. Они посчитали, что дерево – исконный житель Аравии, отсюда и название. Только потом выяснилось, что прародиной растения является Африка, но переделывать уже ничего не стали.
                     .coffee-love__image-box
-            .page-content__perfect-cup.perfect-cup
+            section.page-content__perfect-cup.perfect-cup
                 .perfect-cup__wrapper
                     .perfect-cup__image-box
                         img.perfect-cup__image(src="img/min-img/product-crop.png")
@@ -117,7 +118,7 @@ html(lang = "RU")
                             li.perfect-cup__item
                                 p.perfect-cup__text
                                     | Одним прикосновением к дисплею
-            .page-content__roast.roast
+            section.page-content__roast.roast
                 .roast__card
                     .roast__image-box
                     .roast__wrapper
@@ -150,7 +151,7 @@ html(lang = "RU")
                                         | Очень темная
                                     p.roast__info
                                         | Резкий сладко-горький вкус, отсутствие кислинки.
-            .page-content__rules.rules
+            section.page-content__rules.rules
                 .rules__wrapper
                     h2.rules__heading
                         | 4 простых шага до вашей кофемашины
@@ -193,7 +194,7 @@ html(lang = "RU")
                         | 3. Организатор акции и продавец: ООО «ФИРМЕННЫЕ РЕШЕНИЯ»,
                         br
                         | 198216 Санкт-Петербург Ленинский проспект дом 139 литера А помещение 414
-            .page-content__products.products
+            section.page-content__products.products
                 h2.products__heading
                     | Кофемашины, участвующие в акции
                 ul.products__list

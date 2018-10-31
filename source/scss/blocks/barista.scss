@@ -2,8 +2,17 @@
   max-width: 1230px;
   padding: 50px 30px;
   margin: 0 auto;
+  margin-bottom: 96px;
 
   box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 500px) {
+    padding: 25px 15px;
+  }
 }
 
 .barista__heading {
@@ -15,45 +24,59 @@
   font-weight: 400;
   text-align: center;
   color: $blue;
+
+  @media (max-width: 1000px) {
+    font-size: 42px;
+  }
 }
 
 .barista__list {
   @include clear_list;
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
-  &:first-child {
-    margin-bottom: 80px;
-  }
-
-  &--first-row {
+  &--first-column {
     .barista__item:first-child::before {
       content: "1";
     }
 
     .barista__item:nth-child(2)::before {
-      content: "3";
+      content: "2";
     }
   }
 
-  &--second-row {
+  &--second-column {
     .barista__item:first-child::before {
-      content: "2";
+      content: "3";
     }
 
     .barista__item:nth-child(2)::before {
       content: "4";
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .barista__item {
-  width: 50%;
   max-width: 325px;
   padding-top: 85px;
 
   position: relative;
+
+  &:first-child {
+    margin-bottom: 40px;
+  }
 
   &::before {
     content: "";
@@ -77,11 +100,19 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (max-width: 1000px) {
+    max-width: 425px;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 40px;
+  }
 }
 
 .barista__title {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 
   font-family: "Futura Medium", Arial, sans-serif;
   font-size: 24px;
@@ -91,17 +122,62 @@
 }
 
 .barista__content {
+  min-height: 225px;
+  margin: 0;
+
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
   font-style: italic;
   color: $grey;
   text-align: center;
+
+  @media (max-width: 800px) {
+    min-height: unset;
+  }
 }
 
 .barista__list_wrapper {
+  padding-top: 60px;
+
   background-image: url("../img/min-img/product-image.png");
   background-position: 50% 0;
   background-size: contain;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  @media (max-width: 1100px) {
+    background-size: 80%;
+  }
+
+  @media (max-width: 1050px) {
+    background-position: 50% 50%;
+  }
+
+  @media (max-width: 1000px) {
+    padding-top: 0;
+    padding-bottom: 490px;
+
+    background-position: 50% 100%;
+  }
+
+  @media (max-width: 800px) {
+    padding-bottom: 420px;
+  }
+
+  @media (max-width: 700px) {
+    padding-bottom: 330px;
+  }
+
+  @media (max-width: 600px) {
+    padding-bottom: 270px;
+  }
+
+  @media (max-width: 500px) {
+    padding-bottom: 220px;
+  }
 }

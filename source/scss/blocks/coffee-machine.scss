@@ -1,8 +1,15 @@
 .coffee-machine {
   height: 100vh;
+  max-height: 950px;
+  max-width: 1230px;
+  margin: 0 auto;
 
   background-image: url("../img/min-img/product-section.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 500px) {
+    max-height: 400px;
+  }
 }
