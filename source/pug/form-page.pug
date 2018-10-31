@@ -27,20 +27,38 @@ html(lang = "RU")
                                 .register-form__input
                                     input(type="text" placeholder="Фамилия" id="userSurname")
                                 .register-form__input
-                                    input(type="text" placeholder="Имя" id="userName")
+                                    input(type="text" placeholder="Имя" id="userName" required)
                                 .register-form__input
                                     input(type="text" placeholder="Отчество" id="userPatronymic")
                                 select.register-form__select
-                                    option.register-form__option.register-form__option--placeholder(disabled selected hidden)
+                                    option.register-form__option.register-form__option--placeholder(disabled selected hidden value="none")
                                         | Модель купленной кофемашины
-                                    option
-                                        | PrimaDonna Elite Experience ECAM 650.85.MS
-                                    option
-                                        | PrimaDonna Elite ECAM 650.75.MS
+                                    option(value="ECAM 45.764.W")
+                                        | DL кофемашина ECAM 45.764.W
+                                    option(value="ETAM 29.660.SB")
+                                        | DL кофемашина ETAM 29.660.SB
+                                    option(value="ECAM 28.464.M")
+                                        | DL кофемашина ECAM 28.464.M
+                                    option(value="ECAM350.75.S")
+                                        | DL кофемашина ECAM350.75.S
+                                    option(value="ECAM44.664.B")
+                                        | DL кофемашина ECAM44.664.B
+                                    option(value="ETAM36.364.M")
+                                        | DL кофемашина ETAM36.364.M
+                                    option(value="ECAM510.55.M")
+                                        | DL кофемашина ECAM510.55.M
+                                    option(value="ECAM 650.75.MS")
+                                        | DL кофемашина ECAM 650.75.MS
+                                    option(value="ECAM650.85.MS")
+                                        | DL кофемашина ECAM650.85.MS
+                                    option(value="ECAM 550.75.MS")
+                                        | DL кофемашина ECAM 550.75.MS
+                                    option(value="ECAM 550.55.SB")
+                                        | DL кофемашина ECAM 550.55.SB
                                 .register-form__input
-                                    input(type="text" placeholder="Серийный номер" id="serialNumber")
+                                    input(type="text" placeholder="Серийный номер" id="serialNumber" required)
                                 .register-form__input
-                                    input(type="phone" placeholder="Контактный номер телефона" id="userPhone")
+                                    input(type="phone" placeholder="Контактный номер телефона" id="userPhone" required)
                                 .register-form__input
                                     input(type="text" placeholder="Адрес доставки" id="userAddress")
                                 .register-form__input
